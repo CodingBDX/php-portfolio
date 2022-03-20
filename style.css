@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+*{
+
+font-family: Rubik Mono One;
+margin: 0;
+padding: 0;
+text-decoration: none;
+color: black;
+text-transform: capitalize;
+}
+
+*::selection {
+  background-color: black;
+  color: yellow;
+
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  transform: .2s linear!important;
+}
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  align-content: center;
+}
+.header {
+  position:fixed;
+  top: 0;
+  left: -38rem;
+  height: 100vh;
+  background-color: white;
+  
+  border-right: solid 4px black;
+  width: 35rem;
+text-align: center;
+padding: 0.1rem 2rem;
+display: flex;
+align-items:center ;
+justify-content: space-between;
+transform: .2s linear!important;
+flex-flow:column ;
+  
+}
+.home .image {
+  flex:1 1 40rem;
+}
+.home .content {
+  flex:1 1 40rem;
+}
+.header .logo {
+  text-transform: uppercase;
+  border-bottom: solid 4px black;
+  font-weight: bolder;
+  font-size: 4.5rem;
+}
+.about {
+  min-height: 100vh;
+}
+
+.header .navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.header .navbar a{
+  padding-bottom: 0.7rem;
+}
+
+.header .navbar a.active, .header .navbar a:hover{
+  background-color: yellow;
+}
+
+.header .follow a{
+  font-size: 4rem;
+ 
+transition: .6s linear !important;
+
+}
+
+.header .follow a:hover {
+  transform: rotate(360deg);
+}
+
+#menu-btn {
+  position: absolute;
+  top: 0;
+  right: -5.5rem;
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 4rem;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: black;
+  color: wheat;
+}
+
+.header .navbar a.active {
+  left: -35rem;
+  position: relative;
+}
+
+body .active {
+  padding-left: 38rem;
+}
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2rem;
+  min-height: 100vh;
+}
+
+.home .image img{
+  height: 45rem;
+  padding:2rem ;
+  border: solid 1rem black;
+  
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+.home .content span {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: yellow;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.home .content p{
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  border:solid 0.3rem yellow;
+}
+.heading {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.heading span{
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  border-bottom: solid 2rem black;
+}
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.about .biography p{
+  margin: 1rem auto;
+  max-width: 70rem;
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+
+}
+.about .biography .bio {
+  margin-top: 1rem;
+}
+.about .biography .bio h3{
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  margin: 1rem 0;
+  background-color: gainsboro;
+  word-break: break-all ;
+  font-size: 1.5rem;
+  border: solid .5rem black;
+}
+.about .biography .bio h3 span{
+  font-weight: lighter;
+  color: yellow;
+}
+.about .skills {
+  margin: 3rem 1rem;
+}
+.about .skills .progress {
+  margin-top: 1rem;
+}
+.about .skills .progress .bar span{
+font-weight: normal;}
+
+.about .skills .progress .bar {
+margin: 1rem auto;
+max-width: 70rem;
+border: solid .5rem black;
+}
+.about .skills .progress .bar h3{
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 2rem;
+padding: 2rem;
+background-color: yellow;
+
+}
+.about .skills .progress .bar:nth-child(1) h3{
+  width: 95%;
+}
+.about .skills .progress .bar:nth-child(2) h3{
+  width: 95%;
+}
+.about .skills .progress .bar:nth-child(3) h3{
+  width: 65%;
+}
+.about .skills .progress .bar:nth-child(4) h3{
+  width: 75%;
+}
+
+.about .edu-exp .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+}
+.about .edu-exp .row .box-container{
+flex:1 1 40rem;
+}
+.about .edu-exp .row .box-container .title{
+padding: 1.5rem;
+font-size: 2.5rem;
+background-color: yellow;
+
+
+}
+
+.about .edu-exp .row .box-container .box{
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  background-color: gainsboro;
+}
+.about .edu-exp .row .box-container .box span{
+font-size: 2rem;
+}
+.about .edu-exp .row .box-container .box h3{
+font-size: 2.5rem ;
+}
+.about .edu-exp .row .box-container .box p{
+  line-height: 1.5;
+}
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.services .box-container .box{
+padding: 2rem;
+border: solid .5rem gainsboro;
+}
+.services .box-container .box i{
+  font-size: 6rem;
+  margin-bottom: .5rem;
+}
+.services .box-container .box h3{
+  font-size: 2rem;
+  margin: 1rem 0 ;
+  padding: 1rem;
+  background-color: yellow;
+}
+.services .box-container .box p{
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.services .box-container .box:hover {
+  background-color: gainsboro;
+}
+
+.services .box-container .box:hover i, .services .box-container .box:hover p{
+  color: white;
+}
+
+
+@media (max-width:991px) {
+  html{
+    font-size: 55%;
+  }
+}
+
+
+@media (max-width:450px) {
+  html{
+    font-size: 50%;
+  }
+  .home .image img{
+    height: auto;
+  }
+.about .biography .bio h3{
+font-size: 2rem;
+}
+}
+
