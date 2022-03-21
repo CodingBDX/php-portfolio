@@ -25,6 +25,7 @@ html {
 body {
   overflow: hidden;
   transform: .2s linear!important;
+  background-color: #FCA311;
 }
 section {
   padding: 3rem 2rem;
@@ -39,7 +40,7 @@ section {
   left: -38rem;
   height: 100vh;
   background-color: white;
-  
+  z-index: 999;
   border-right: solid 4px black;
   width: 35rem;
 text-align: center;
@@ -268,6 +269,75 @@ font-size: 2.5rem ;
   gap: 1.5rem;
   align-items: flex-start;
 }
+.message {
+  position: sticky;
+  top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: yellow;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.portfolio .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+ }
+
+.portfolio .box-container .box img{
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .box-container .box h3{
+  margin: 1rem 0;
+  font-size: 2rem;
+  
+ 
+  
+}
+.contact form {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.contact form .box {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  border: solid .5rem black;
+  margin: 1rem 0;
+}
+.contact form .flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.contact form .flex .box {
+
+  width: 45%;
+}
+.credit {
+  text-align: center;
+  font-size: 2rem;
+  background-color: black;
+  color: yellow;
+}
+
+.portfolio .box-container .box span{
+ 
+  font-size: 1.7rem;
+}
+.portfolio .box-container:hover .box{
+  opacity: .2;
+}
+.portfolio .box-container .box:hover{
+  opacity: .8;
+}
 .services .box-container .box{
 padding: 2rem;
 border: solid .5rem gainsboro;
@@ -312,6 +382,16 @@ border: solid .5rem gainsboro;
   }
 .about .biography .bio h3{
 font-size: 2rem;
+}
+.contact form .flex .box {
+
+  width: 100%;
+}
+.contact form .flex{
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem;
 }
 }
 
